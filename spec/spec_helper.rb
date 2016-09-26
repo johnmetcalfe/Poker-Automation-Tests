@@ -13,3 +13,8 @@ require 'rspec'
 require 'httparty'
 require 'selenium-webdriver'
 require 'yaml'
+require 'json'
+
+def url(path)
+  ('' + path)
+end

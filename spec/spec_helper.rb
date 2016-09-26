@@ -14,7 +14,8 @@ require 'httparty'
 require 'selenium-webdriver'
 require 'yaml'
 require 'json'
+require 'pry'
 
-def url(path)
-  ('' + path)
+def url(path = '')
+  ('localhost:8000' + path)
 end

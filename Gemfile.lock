@@ -7,6 +7,7 @@ GEM
     ffi (1.9.14)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
+    humanize (1.1.2)
     json (2.0.2)
     multi_xml (0.5.5)
     rspec (3.5.0)
@@ -34,6 +35,7 @@ PLATFORMS
 
 DEPENDENCIES
   httparty (~> 0.14)
+  humanize (~> 1.1, >= 1.1.2)
   json (~> 2.0)
   rspec (~> 3.5.0)
   selenium-webdriver (~> 2.53.4)

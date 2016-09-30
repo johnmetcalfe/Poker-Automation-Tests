@@ -18,14 +18,16 @@ require 'pry'
 require 'humanize'
 
 def url(path = '')
-  ('http://localhost:8000' + path)
+  ('http://localhost:3000' + path)
+end
+def url_api(path = '')
+  ('http://localhost:3001' + path)
 end
 
 def login_play
   @driver.get url
   nav(1)
-  @driver.switch_to.alert.send_keys("John")
-  @driver.switch_to().alert().accept()
+  @driver.find_element(id: "name-input").send_keys "John"
   expect(@driver.title).to eq "Login"
   nav(2)
   expect(@driver.title).to eq "Poker"
